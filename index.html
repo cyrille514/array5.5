@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+  <script src="./js/app.js" defer></script>
+  <style type="text/tailwindcss">
+    @import "tailwindcss"; 
+
+    @layer base {
+      :root { 
+        @apply text-sm;
+        line-height: 1.5;
+      }
+    }
+    </style
+
+  <title></title>
+</head>
+<body class="bg-gray-200 text-white min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-2xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-800 p-8 rounded-3xl shadow-2xl border border-slate-700">
+    
+
+    <div>
+      <h1 class="text-2xl font-bold mb-4 text-blue-400">Planetas</h1>
+      <ul id="lista-planetas" class="space-y-2">
+        <!-- Se genera dinámicamente -->
+      </ul>
+    </div>
+
+    <!-- Columna Derecha: Detalles -->
+    <div id="detalle-planeta" class="flex flex-col justify-center items-center p-6 border-l border-slate-700 text-center">
+      <div id="placeholder-text">
+        <p class="text-slate-500 italic">Haz clic en un planeta para ver su descripción</p>
+      </div>
+      <div id="info-content" class="hidden">
+        <h2 id="info-titulo" class="text-3xl font-bold text-blue-300 mb-4"></h2>
+        <p id="info-desc" class="text-slate-300 leading-relaxed"></p>
+      </div>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
